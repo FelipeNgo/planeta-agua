@@ -186,8 +186,7 @@ footer {
   margin-top: 10px;
 }
 
-.btn {
-  background: var(--accent);
+.btn.start, .btn.stop {
   color: white;
   padding: 8px 14px;
   border-radius: 8px;
@@ -196,10 +195,21 @@ footer {
   cursor: pointer;
 }
 
-.btn.ghost {
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid #a0c4ff;
+.btn.start {
+  background: #22c55e;  /* Green color */
+}
+
+.btn.stop {
+  background: #ef4444;  /* Red color */
+}
+
+/* Add hover effects */
+.btn.start:hover {
+  background: #16a34a;
+}
+
+.btn.stop:hover {
+  background: #dc2626;
 }
 
 .samples {
