@@ -22,7 +22,9 @@ O site apresenta:
 | Participante | Função |
 |---------------|--------|
 | Felipe Ramires | Desenvolvimento e Design |
-| [adicione os outros nomes aqui] | Pesquisa / Apresentação / Protótipo |
+| José Alessandro | Pesquisa / Apresentação / Protótipo |
+| Gustavo Pederiva |
+| Matheus Inoue |
 
 ---
 
