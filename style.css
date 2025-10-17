@@ -1,4 +1,8 @@
 :root {
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --border-radius: 12px;
   --bg1: #E6F7FF;
   --bg2: #BEE7FF;
   --accent: #0B5FFF;
@@ -52,6 +56,10 @@ main {
   }
 }
 
+.impact-img {
+  will-change: transform;
+}
+
 .card {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 14px;
@@ -100,12 +108,19 @@ main {
 }
 
 /* Ajuste para telas pequenas (celulares) */
-@media (max-width: 768px) {
-  .impact-img {
-    max-width: 90%;
+@media (max-width: 600px) {
+  header {
+    padding: var(--spacing-md);
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .card {
+    padding: var(--spacing-md);
   }
 }
-
 
 .actions {
   list-style: none;

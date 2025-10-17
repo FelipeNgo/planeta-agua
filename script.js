@@ -1,5 +1,6 @@
-let simInterval = null;
+const simInterval = {current: null};
 let currentSample = 'limpa';
+const UPDATE_INTERVAL = 1500;
 
 const phEl = document.getElementById('phReading');
 const turbEl = document.getElementById('turbReading');
@@ -22,6 +23,16 @@ function sampleRanges(sample) {
   }
 }
 
+function debounce(fn, delay) {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+}
+
+const debouncedUpdate = debounce(updateReadings, 100);
+
 function updateReadings() {
   const r = sampleRanges(currentSample);
   const ph = randBetween(r.ph[0], r.ph[1]);
@@ -36,14 +47,14 @@ function updateReadings() {
 }
 
 function startSim() {
-  if (simInterval) return;
-  updateReadings();
-  simInterval = setInterval(updateReadings, 1500);
+  if (simInterval.current) return;
+  debouncedUpdate();
+  simInterval.current = setInterval(debouncedUpdate, UPDATE_INTERVAL);
 }
 
 function stopSim() {
-  clearInterval(simInterval);
-  simInterval = null;
+  clearInterval(simInterval.current);
+  simInterval.current = null;
 }
 
 function setSample(s) {
