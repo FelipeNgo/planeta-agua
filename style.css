@@ -96,7 +96,7 @@ main {
 
 .impact-img {
   width: 100%;
-  max-width: 480px; /* limite no desktop */
+  max-width: 480px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -196,14 +196,13 @@ footer {
 }
 
 .btn.start {
-  background: #22c55e;  /* Green color */
+  background: #22c55e;  
 }
 
 .btn.stop {
-  background: #ef4444;  /* Red color */
+  background: #ef4444; 
 }
 
-/* Add hover effects */
 .btn.start:hover {
   background: #16a34a;
 }
