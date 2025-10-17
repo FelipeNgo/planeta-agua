@@ -212,7 +212,9 @@ footer {
   justify-content: center;
   color: #07507a;
   font-weight: 700;
+  font-size: 14px;
   margin-top: 12px;
+
 }
 
 .muted {
