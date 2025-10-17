@@ -19,12 +19,12 @@ O site apresenta:
 
 ## 🧑‍💻 Equipe
 
-| Participante | Função |
-|---------------|--------|
-| Felipe Ramires | Desenvolvimento e Design |
-| José Alessandro | Pesquisa / Apresentação / Protótipo |
-| Gustavo Pederiva |
-| Matheus Inoue |
+| Participantes |
+|---------------|
+| Felipe Ramires | 
+| José Alessandro |   
+| Gustavo Pederiva | 
+| Matheus Inoue | 
 
 ---
 
