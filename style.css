@@ -1,0 +1,192 @@
+:root {
+  --bg1: #E6F7FF;
+  --bg2: #BEE7FF;
+  --accent: #0B5FFF;
+  --muted: #475569;
+  font-family: 'Inter', system-ui;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(var(--bg1), var(--bg2));
+  color: #0f172a;
+}
+
+header {
+  text-align: center;
+  padding: 60px 16px 40px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #0b4a7a;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #07335a;
+  margin: 40px 0 20px;
+}
+
+.grid-3 {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(11, 95, 255, 0.08);
+  text-align: center;
+  padding: 18px;
+}
+
+.card h3 {
+  margin: 10px 0 6px;
+  color: #07335a;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.blueband {
+  background: var(--accent);
+  color: white;
+  padding: 50px 16px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.actions {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.actions li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  background: #07335a;
+  color: white;
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* === AquaTech === */
+.monitor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .monitor {
+    flex-direction: row;
+  }
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 16px;
+  flex: 1;
+  box-shadow: 0 4px 16px rgba(7, 51, 90, 0.08);
+}
+
+.reading {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #0b4a7a;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid #a0c4ff;
+}
+
+.samples {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.sample {
+  background: rgba(3, 53, 90, 0.08);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #07335a;
+}
+
+.chart {
+  height: 120px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #dbeefe, #f6fbff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #07507a;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}

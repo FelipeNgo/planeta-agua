@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Planeta Água — Cultura Oceânica</title>
+
+  <!-- Fonte e CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🌎 Planeta Água</h1>
+    <p>Cultura Oceânica para Enfrentar as Mudanças Climáticas no Meu Território</p>
+  </header>
+
+  <main>
+    <!-- Importância -->
+    <section>
+      <h2 class="section-title">Por que o oceano é essencial?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="emoji">💧</div>
+          <h3>Regula o Clima</h3>
+          <p>Os oceanos absorvem calor e CO₂, ajudando a equilibrar o clima do planeta.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌍</div>
+          <h3>Sustenta a Vida</h3>
+          <p>Mais de 70% do oxigênio que respiramos vem dos oceanos e das algas marinhas.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌊</div>
+          <h3>Fonte de Recursos</h3>
+          <p>Os oceanos oferecem alimento, energia e oportunidades de pesquisa e inovação.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mudanças Climáticas -->
+    <section class="blueband">
+      <h2>O impacto das Mudanças Climáticas</h2>
+      <p>O aumento da temperatura global está derretendo geleiras, elevando o nível dos mares e ameaçando ecossistemas marinhos. Precisamos agir localmente para proteger globalmente.</p>
+    </section>
+
+    <!-- Ações locais -->
+    <section>
+      <h2 class="section-title">🌱 Ações que Podemos Fazer no Nosso Território</h2>
+      <ul class="actions">
+        <li>♻️ Reduzir o uso de plásticos descartáveis e incentivar a reciclagem.</li>
+        <li>🚿 Economizar água em casa e promover o uso consciente nas escolas.</li>
+        <li>🌊 Participar de campanhas de limpeza de rios, praias e lagos locais.</li>
+        <li>📲 Usar tecnologia para monitorar e divulgar dados sobre qualidade da água (p.ex.: AquaTech).</li>
+      </ul>
+    </section>
+
+    <!-- AquaTech -->
+    <section>
+      <h2 class="section-title">AquaTech — Monitoramento Inteligente (Simulação)</h2>
+      <p class="muted center">Painel de leitura de sensores simulados de pH, turbidez e temperatura.</p>
+
+      <div class="monitor">
+        <div class="panel">
+          <h4>Leituras Atuais</h4>
+          <div class="readings">
+            <div><div class="reading" id="phReading">pH — 7.00</div><div class="meta">Acidez / alcalinidade</div></div>
+            <div><div class="reading" id="turbReading">Turbidez — 3 NTU</div><div class="meta">Partículas em suspensão</div></div>
+            <div><div class="reading" id="tempReading">Temperatura — 22 °C</div><div class="meta">Temperatura da amostra</div></div>
+          </div>
+
+          <div class="controls">
+            <button class="btn" onclick="startSim()">Iniciar</button>
+            <button class="btn ghost" onclick="stopSim()">Parar</button>
+            <div class="samples">
+              <span class="muted">Amostra:</span>
+              <div class="sample" onclick="setSample('limpa')">Água limpa</div>
+              <div class="sample" onclick="setSample('suja')">Água suja</div>
+              <div class="sample" onclick="setSample('detergente')">Com detergente</div>
+            </div>
+          </div>
+
+          <div class="chart" id="chartPlaceholder">Gráfico de tendência (simulado)</div>
+        </div>
+
+        <div class="panel">
+          <h4>Sobre o AquaTech</h4>
+          <p class="muted">Protótipo com sensores de pH, turbidez e temperatura que monitoram a qualidade da água em tempo real.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Semana Nacional de Ciência e Tecnologia — Planeta Água 🌊 | Desenvolvido por Felipe Ramires e equipe
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
