@@ -77,6 +77,35 @@ main {
   text-align: center;
   margin: 40px 0;
 }
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.impact-img {
+  width: 100%;
+  max-width: 480px; /* limite no desktop */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.impact-img:hover {
+  transform: scale(1.03);
+}
+
+/* Ajuste para telas pequenas (celulares) */
+@media (max-width: 768px) {
+  .impact-img {
+    max-width: 90%;
+  }
+}
+
 
 .actions {
   list-style: none;
