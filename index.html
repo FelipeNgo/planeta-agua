@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Planeta Água — Cultura Oceânica</title>
   <meta name="description" content="Cultura Oceânica para Enfrentar as Mudanças Climáticas - 
     Informações sobre preservação dos oceanos e monitoramento da qualidade da água.">
@@ -17,34 +17,43 @@
     <p>Cultura Oceânica para Enfrentar as Mudanças Climáticas no Meu Território</p>
   </header>
 
-  <main>
-    <section>
-      <h2 class="section-title">Por que o oceano é essencial?</h2>
-      <div class="grid-3">
-        <div class="card">
-          <div class="emoji">💧</div>
-          <h3>Regula o Clima</h3>
-          <p>Os oceanos absorvem calor e CO₂, ajudando a equilibrar o clima do planeta.</p>
-        </div>
-        <div class="card">
-          <div class="emoji">🌍</div>
-          <h3>Sustenta a Vida</h3>
-          <p>Mais de 70% do oxigênio que respiramos vem dos oceanos e das algas marinhas.</p>
-        </div>
-        <div class="card">
-          <div class="emoji">🌊</div>
-          <h3>Fonte de Recursos</h3>
-          <p>Os oceanos oferecem alimento, energia e oportunidades de pesquisa e inovação.</p>
-        </div>
+<main>
+  <div class="tabs-container">
+  <a href="index.html">
+    <button class="tab-btn active">Informações</button>
+  </a>
+  <a href="#simulacao">
+    <button class="tab-btn">Simulação AquaTech</button>
+  </a>
+</div>
+
+  <!-- ABA DE INFORMAÇÕES -->
+  <section id="info" class="tab-content active">
+    <h2 class="section-title">Por que o oceano é essencial?</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="emoji">💧</div>
+        <h3>Regula o Clima</h3>
+        <p>Os oceanos absorvem calor e CO₂, ajudando a equilibrar o clima do planeta.</p>
       </div>
-    </section>
+      <div class="card">
+        <div class="emoji">🌍</div>
+        <h3>Sustenta a Vida</h3>
+        <p>Mais de 70% do oxigênio que respiramos vem dos oceanos e das algas marinhas.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🌊</div>
+        <h3>Fonte de Recursos</h3>
+        <p>Os oceanos oferecem alimento, energia e oportunidades de pesquisa e inovação.</p>
+      </div>
+    </div>
 
     <section class="blueband">
       <h2>O impacto das Mudanças Climáticas</h2>
-      <p>O aumento da temperatura global está derretendo geleiras, elevando o nível dos mares e ameaçando ecossistemas marinhos. Precisamos agir localmente para proteger globalmente.</p>
+      <p>O aumento da temperatura global está derretendo geleiras, elevando o nível dos mares e ameaçando ecossistemas marinhos.</p>
       <div class="image-gallery">
-        <img src="images/geleira1.jpg" alt="Geleira derretendo 1" class="impact-img" width="500" loading="lazy">
-        <img src="images/geleira2.jpg" alt="Geleira derretendo 2" class="impact-img" width="500" loading="lazy">
+        <img src="images/geleira1.jpg" alt="Geleira derretendo 1" class="impact-img" loading="lazy">
+        <img src="images/geleira2.jpg" alt="Geleira derretendo 2" class="impact-img" loading="lazy">
       </div>
     </section>
 
@@ -57,53 +66,57 @@
         <li>📲 Usar tecnologia para monitorar e divulgar dados sobre qualidade da água (p.ex.: AquaTech).</li>
       </ul>
     </section>
+  </section>
 
-    <section>
-      <h2 class="section-title">AquaTech — Monitoramento Inteligente (Simulação)</h2>
-      <p class="muted center">Painel de leitura de sensores simulados de pH, turbidez e temperatura.</p>
+  <div class="info-section">
+  <h2 class="info-title">🎯 Objetivo do AquaTech</h2>
 
-      <div class="monitor">
-        <div class="panel">
-          <h4>Leituras Atuais</h4>
-          <div class="readings">
-            <div><div class="reading" id="phReading">pH — 7.00</div><div class="meta">Acidez / alcalinidade</div></div>
-            <div><div class="reading" id="turbReading">Turbidez — 3 NTU</div><div class="meta">Partículas em suspensão</div></div>
-            <div><div class="reading" id="tempReading">Temperatura — 22 °C</div><div class="meta">Temperatura da amostra</div></div>
-          </div>
-          <div class="controls">
-            <button class="btn start" onclick="startSim()">Iniciar</button>
-            <button class="btn stop" onclick="stopSim()">Parar</button>
-            <div class="samples">
-              <span class="muted">Amostra:</span>
-              <div class="sample" onclick="setSample('limpa')">Água limpa</div>
-              <div class="sample" onclick="setSample('suja')">Água suja</div>
-              <div class="sample" onclick="setSample('detergente')">Com detergente</div>
-            </div>
-          </div>
-          <div class="chart" id="chartPlaceholder">Gráfico de tendência (simulado)</div>
+  <p>
+    O <strong>AquaTech</strong> tem como objetivo integrar tecnologia e ciência para monitoramento contínuo
+    da qualidade da água em rios, lagos e zonas costeiras, apoiando ações de preservação e tomada de decisão.
+  </p>
+
+  <div class="info-highlight">
+    <h3>💡 Por que usar o AquaTech?</h3>
+    <p>
+      O AquaTech permite detecção precoce de alterações nos parâmetros (pH, turbidez, temperatura, nível do mar),
+      gerando dados acionáveis para comunidades, escolas e gestores. É uma solução acessível e escalável
+      para fortalecer a cultura oceânica local.
+    </p>
+  </div>
+
+  <h2 class="info-title" style="margin-top:28px;">🌍 Impacto e Benefícios</h2>
+  <ul class="benefits-list">
+    <li><span class="benefit-icon">📊</span> Geração de dados para tomada de decisão ambiental.</li>
+    <li><span class="benefit-icon">🌱</span> Incentivo à educação ambiental e práticas sustentáveis.</li>
+    <li><span class="benefit-icon">📡</span> Integração com sensores e IoT para monitoramento remoto.</li>
+    <li><span class="benefit-icon">🤝</span> Apoio a políticas públicas e ações comunitárias.</li>
+  </ul>
+</div>
+
+  <!-- ABA DE SIMULAÇÃO -->
+  <section id="simulacao" class="tab-content">
+    <h2 class="section-title">AquaTech — Monitoramento Inteligente (Simulação)</h2>
+    <p class="muted center">Painel de leitura de sensores simulados de pH, turbidez e temperatura.</p>
+
+    <div class="monitor">
+      <div class="panel">
+        <h4>Leituras Atuais</h4>
+        <div class="readings">
+          <div><div class="reading" id="phReading">pH — 7.00</div><div class="meta">Acidez / alcalinidade</div></div>
+          <div><div class="reading" id="turbReading">Turbidez — 3 NTU</div><div class="meta">Partículas em suspensão</div></div>
+          <div><div class="reading" id="tempReading">Temperatura — 22 °C</div><div class="meta">Temperatura da amostra</div></div>
         </div>
-
-        <div class="panel">
-          <h4>Sobre o AquaTech</h4>
-          <p class="muted">
-            O <strong>AquaTech</strong> é um sistema de monitoramento inteligente da qualidade da água,
-            idealizado para o tema <em>"Planeta Água: Cultura Oceânica para Enfrentar as Mudanças Climáticas no Meu Território"</em>.
-            Ele representa o uso da <strong>tecnologia e da ciência de dados</strong> como aliados na preservação dos ecossistemas aquáticos.
-          </p>
-          <ul class="muted" style="padding-left: 20px; list-style: disc;">
-            <li><strong>Sensores simulados:</strong> pH, turbidez e temperatura — parâmetros fundamentais para avaliar a potabilidade e o equilíbrio ambiental da água.</li>
-            <li><strong>Microcontrolador (futuro protótipo real):</strong> Arduino ou ESP32, capazes de ler dados dos sensores físicos e transmitir via Wi-Fi ou Bluetooth.</li>
-            <li><strong>Interface web:</strong> este site atua como painel de visualização, podendo receber dados em tempo real de sensores conectados.</li>
-            <li><strong>Aplicações:</strong> monitoramento de rios, lagos, reservatórios, e áreas costeiras — auxiliando comunidades locais e escolas em ações sustentáveis.</li>
-          </ul>
-          <p class="muted">
-            💡 No futuro, o AquaTech pode ser integrado a um <strong>banco de dados IoT</strong>,
-            gerando relatórios automáticos sobre a qualidade da água e alertas em tempo real para órgãos ambientais.
-          </p>
+        <div class="controls">
+          <button class="btn start" onclick="startSim()">Iniciar</button>
+          <button class="btn stop" onclick="stopSim()">Parar</button>
         </div>
+        <div class="chart" id="chartPlaceholder">Gráfico de tendência (simulado)</div>
+        <div id="statusAgua" class="status-agua">💧 Aguardando simulação...</div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
   <footer>
     © 2025 Semana Nacional de Ciência e Tecnologia — Planeta Água 🌊 | Desenvolvido por Equipe AquaTech.
